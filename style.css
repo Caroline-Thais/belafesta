@@ -17,7 +17,7 @@ html {
 }
 
 :root {
-  --primary-color: rgb(230, 188, 39);
+  --primary-color: white;
   --white-color: #fff;
   --black-color: #000;
 }
@@ -49,6 +49,7 @@ html {
 
 .navbar-link {
   color: var(--primary-color);
+  text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 2rem;
   display: inline-block;
   margin: 0 3rem;
@@ -67,16 +68,18 @@ html {
 
 .section-1-banner h1 {
   color: var(--primary-color);
+  text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 13rem;
-  font-weight: 300;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
 
 .section-1-banner p {
   color: var(--primary-color);
+  text-shadow: black 0.1em 0.1em 0.2em;
   font-size: 4rem;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 0.1rem;
   margin: 6rem 0 4rem 0;
 }
@@ -110,6 +113,44 @@ html {
 /* End of Section 1 */
 
 .section-2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin: 3% 20%;
+}
+
+.section-2 h4{
+  font-size: x-large;
+  color: purple;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.section-2 p{
+  font-size: x-large;
+  text-align: justify;
+}
+
+
+
+/* Section 3 */
+.section-3 {
+  background-color: var(--black-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0);
+  position: relative;
+}
+  /* End of Section 3 */
+
+  /* Section 4 */
+.section-4 {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -117,6 +158,7 @@ html {
   justify-content: space-evenly;
   position: relative;
 }
+  /* End of Section 4 */
 
 /* Vídeo */
 .stories {
@@ -127,6 +169,9 @@ html {
   font-size: 3em;
   text-align: center;
   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .video-container {
@@ -144,10 +189,9 @@ html {
   object-fit: cover;
 }
 
-
 .story-bg {
   display: flex;
-  background-color: rgba(238, 238, 238, 0.85);
+  background-color: rgba(227, 143, 239, 0.85);
   
   justify-content: center;
 }
@@ -176,7 +220,26 @@ html {
 .story-paragraph::first-letter {
   margin-left: 1rem;
 }
-/* Fim de Vídeo */
+/* End of Video */
+
+.local{
+  font-size: x-large;
+  color: purple;
+  margin-bottom: 1%;
+  margin-left: 3%;
+}
+
+/* Section Map */
+.map {
+  width: 100%;
+  height: 450px;
+  margin-top: 5%;
+}
+
+.map iframe {
+  width: 100%;
+}
+/* End of Map */
 
 /* Responsive */
 @media (max-width: 1500px) {
@@ -189,202 +252,20 @@ html {
   html {
     font-size: 40%;
   }
+}
 
-  .navbar-link {
-    font-weight: 700;
-  }
-
-  .section-1-banner h1 {
-    font-size: 8rem;
-  }
-
-  .section-1-banner p {
-    font-size: 3rem;
-  }
-
-  .watch-btn {
-    right: 25%;
+@media all and (max-width: 500px) {
+  .section-2 {
+    height: 200vh;
   }
 }
 
-@media (max-width: 900px) {
-  .section-3-content {
-    width: 90%;
-  }
 
-  .loading-wrapper {
-    width: 70%;
-  }
-
-  .loading i {
-    font-size: 6rem;
-  }
-
-  .section-5-heading {
-    font-size: 12rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .logo {
-    top: 0;
-    left: 2rem;
-  }
-
-  .logo i {
-    font-size: 8rem;
-  }
-
-  .controls {
-    display: none;
-  }
-
-  .cube-wrapper {
-    opacity: 0.7;
-  }
-
-  .cube {
-    top: 3rem;
-  }
-
-  .section-1-banner {
-    position: absolute;
-  }
-
-  .section-1-banner h1 {
-    position: relative;
-    left: -5rem;
-  }
-
-  .section-1-banner h1::first-letter {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .section-1-banner button:hover {
-    clip-path: polygon(
-      50% 0%,
-      81% 5%,
-      100% 0,
-      100% 100%,
-      80% 95%,
-      50% 100%,
-      20% 95%,
-      0 100%,
-      0 0,
-      23% 5%
-    );
-  }
-
-  .iphones {
-    height: 70vh;
-    width: 70vw;
-  }
-
-  .watch-btn {
-    right: 15%;
-  }
-
-  .airpods-img-1 {
-    display: none;
-  }
-
-  .airpods .airpods-img-2 {
-    width: 100%;
-  }
-
-  .airpods-btn {
-    background-color: var(--white-color);
-    color: var(--primary-color);
-    box-shadow: 0.1rem 0.1rem 0.1rem #ddd;
-  }
-
-  .icon-link {
-    margin: 0 2rem;
-  }
-}
+   
 
 @media (max-width: 550px) {
   .navbar-link {
     margin: 0 1.5rem;
-  }
-
-  .section-2-heading {
-    font-size: 8rem;
-  }
-
-  .section-3-heading {
-    font-size: 8rem;
-  }
-
-  .macbook-info-heading {
-    font-size: 5rem;
-  }
-
-  .macbook-btn {
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.3rem;
-  }
-
-  .airpods-buttons {
-    width: 50rem;
-    text-align: center;
-  }
-
-  .icon-link img {
-    width: 8rem;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 35%;
-  }
-
-  .logo {
-    top: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .navbar {
-    left: 50%;
-    transform: translateX(-50%);
-    width: max-content;
-  }
-
-  .section-1-banner p {
-    text-align: center;
-  }
-
-  .iphones {
-    width: 75vw;
-  }
-
-  .section-3-heading {
-    font-size: 6rem;
-  }
-
-  .macbook-info {
-    width: 40rem;
-  }
-
-  .macbook-info-heading {
-    font-size: 3rem;
-  }
-
-  .macbook-price {
-    font-size: 2rem;
-    font-weight: 300;
-  }
-
-  .watch-btn {
-    right: 5%;
-  }
-
-  .icon-link img {
-    width: 6rem;
   }
 }
 /* End of Responsive */
