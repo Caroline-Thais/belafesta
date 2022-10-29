@@ -147,12 +147,18 @@ html {
   clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0);
   position: relative;
 }
+
+.slides{
+  height: 30vh;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
   /* End of Section 3 */
 
   /* Section 4 */
 .section-4 {
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -230,10 +236,18 @@ html {
 }
 
 /* Section Map */
+.sociallogo{
+  cursor: pointer;
+}
+.phone{
+  text-align: end;
+  margin-top: 3%;
+  margin-right: 5%;
+}
 .map {
   width: 100%;
   height: 450px;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .map iframe {
@@ -260,8 +274,11 @@ html {
   }
 }
 
-
-   
+@media all and (max-width: 500px) {
+  .section-3 {
+    height: 400vh;
+  }
+}
 
 @media (max-width: 550px) {
   .navbar-link {
@@ -269,3 +286,74 @@ html {
   }
 }
 /* End of Responsive */
+
+
+/* Photo galery */
+a[data-fancybox] img {
+  cursor: zoom-in;
+}
+
+.fancybox__container {
+  flex-direction: column-reverse;
+
+  --fancybox-color: #0d0c22;
+  --fancybox-bg: #fff;
+
+  --fancybox-thumbs-width: 80px;
+  --fancybox-thumbs-ratio: 4 / 3;
+
+  --carousel-button-bg: #f3f3f4;
+  --carousel-button-border-radius: 8px;
+
+  --carousel-button-svg-width: 20px;
+  --carousel-button-svg-height: 20px;
+
+  --carousel-button-svg-stroke-width: 1.5;
+  --carousel-button-svg-filter: none;
+}
+
+.carousel__button.is-close {
+  top: 36px;
+  right: 26px;
+  z-index: 30;
+}
+
+.carousel__button.is-close:hover {
+  background: #e7e7e9;
+}
+
+.fancybox__slide {
+  padding-top: 1.25rem;
+}
+
+/**
+*  Thumbnails
+*/
+
+.fancybox__thumbs {
+  padding: 0 100px 0 26px;
+  border-bottom: 2px solid #f3f3f4;
+}
+
+/* Align thumbnails on right side if not draggable */
+.fancybox__thumbs:not(.is-draggable) .carousel__track {
+  justify-content: flex-end;
+}
+
+.carousel__slide.has-thumb {
+  padding: 30px 7px;
+}
+
+.fancybox__thumb {
+  border-radius: 4px;
+  background-color: #e7e7e9;
+}
+
+.is-nav-selected .fancybox__thumb {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #ea4c89;
+}
+
+.is-nav-selected .fancybox__thumb::after {
+  display: none;
+}
+/* End of Photo galery*/
