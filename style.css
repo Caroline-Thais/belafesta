@@ -45,6 +45,18 @@ html {
   position: absolute;
   top: 3rem;
   right: 10%;
+  visibility: hidden;
+  animation: fadeAnimationtitle 1s 0.7s forwards;
+}
+@keyframes fadeAnimationtitle {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .navbar-link {
@@ -64,6 +76,18 @@ html {
 /* Banner */
 .section-1-banner {
   flex-direction: column;
+  visibility: hidden;
+  animation: fadeAnimationtitle 1s 0.5s forwards;
+}
+@keyframes fadeAnimationtitle {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .section-1-banner h1 {
@@ -288,6 +312,13 @@ html {
   margin-right: 3%;
   font-size: 5em;
 }
+
+.phone:first-child{
+  font-size: x-large;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
 .map {
   width: 100%;
   height: 450px;
@@ -315,19 +346,42 @@ html {
 
 @media all and (max-width: 500px) {
   .section-2 {
-    height: 200vh;
+    height: 50vh;
+  }
+  .section-2 p{
+    text-align:center;
+  }
+}
+
+
+
+@media all and (max-width: 500px) {
+  .section-3 {
+    height: 180vh;
+  }
+  .section-3 p{
+    text-align:center;
   }
 }
 
 @media all and (max-width: 500px) {
-  .section-3 {
-    height: 400vh;
+  .section-4 {
+    height: 25vh;
+  }
+  .section-4 p{
+    text-align:center;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .section-5 {
+    height: 450vh;
   }
 }
 
 @media (max-width: 550px) {
   .navbar-link {
-    margin: 0 1.5rem;
+    margin: 0 1.0rem;
   }
 }
 /* End of Responsive */
