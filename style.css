@@ -474,6 +474,5 @@ a[data-fancybox] img {
 .is-nav-selected .fancybox__thumb::after {
   display: none;
 }
+}
 /* End of Photo galery*/
-
-
