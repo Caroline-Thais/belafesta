@@ -160,16 +160,21 @@ html {
 
 /* Section 3 */
 .section-3{
-  height: 90vh;
-  background: #ff9966;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 110vh;
+  /*background: #ff9966;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(rgba(3, 3, 3, 0.704), rgba(255, 94, 98, 0.3)),url(./images/section-3-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   background-attachment: fixed;
+  opacity: 0.8;
 }
 
 .section-3 h4{
@@ -330,6 +335,17 @@ html {
 }
 /* End of Map */
 
+/* Footer */
+footer {
+  background: #0b171f;
+  padding: 3%;
+  font-size: 12px;
+  color: var(--main-color);
+  margin-top: 3%;
+  text-align: center;
+}
+/* End of Footer */
+
 
 /* Responsive */
 @media (max-width: 1500px) {
@@ -352,8 +368,6 @@ html {
     text-align:center;
   }
 }
-
-
 
 @media all and (max-width: 500px) {
   .section-3 {
@@ -384,6 +398,11 @@ html {
     margin: 0 1.0rem;
   }
 }
+
+@media all and (max-width: 500px) {
+  footer {
+    margin-top: 8%;
+  }
 /* End of Responsive */
 
 
@@ -456,3 +475,5 @@ a[data-fancybox] img {
   display: none;
 }
 /* End of Photo galery*/
+
+

@@ -39,7 +39,7 @@ const slideshow = () => {
             divs[0].classList.add('change')
             a = 1
         }
-    }, 10000)
+    }, 8000)
 }
 
 slideshow()
@@ -94,6 +94,7 @@ Fancybox.bind('[data-fancybox="gallery"]', {
     },
   });
 //End of photo galery
+
 
 
 
