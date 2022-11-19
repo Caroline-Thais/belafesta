@@ -142,6 +142,8 @@ html {
   display: flex;
   flex-direction: column;
   margin: 3% 20%;
+  padding-bottom: 5%;
+
 }
 
 .section-2 h4{
@@ -223,6 +225,7 @@ html {
   justify-content: space-evenly;
   clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0);
   position: relative;
+  padding: 10% 0;
 }
 
 .slides{
@@ -377,17 +380,12 @@ footer {
 
 @media all and (max-width: 500px) {
   .section-3 {
-    height: 200vh;
+    height: 180vh;
   }
   .section-3 p{
     text-align:center;
   }
 }
-
-@media all and (max-width: 667px) {
-  .section-3 {
-    height: 250vh;
-  }
 
 @media all and (max-width: 500px) {
   .section-4 {
@@ -405,13 +403,13 @@ footer {
 
 @media all and (max-width: 500px) {
   .section-5 {
-    height: 400vh;
+    height: 500vh;
   }
 }
 
 @media all and (max-width: 667px) {
   .section-5 {
-    height: 500vh;
+    height: 400vh;
   }
 }
 
@@ -497,5 +495,5 @@ a[data-fancybox] img {
   display: none;
 }
 }
-}
+
 /* End of Photo galery*/
