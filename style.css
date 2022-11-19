@@ -225,7 +225,6 @@ html {
   justify-content: space-evenly;
   clip-path: polygon(100% 0, 100% 95%, 38% 100%, 0 100%, 0 0);
   position: relative;
-  margin: 5% 0;
 }
 
 .slides{
